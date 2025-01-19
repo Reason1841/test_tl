@@ -1,0 +1,16 @@
+Module
+  name: jumpWindow
+  description: jumpWindow
+  author: Reason
+  website: none
+
+  autoload: true
+  autoload-priority: 1000
+  sandbox: true
+
+  @onLoad: |
+    dofile 'jumpWindow'
+    jumpWindow.init()
+
+  @onUnload: |
+    jumpWindow.terminate()

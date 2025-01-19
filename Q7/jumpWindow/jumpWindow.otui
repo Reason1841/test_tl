@@ -1,0 +1,17 @@
+MainWindow
+  !text: tr('Jump Button')
+  size: 350 350
+
+  @onEnter: jumpWindow.destroy()
+  @onEscape: jumpWindow.destroy()
+
+  Button
+    id: jumpWindowButton
+    !text: tr('Jump!')
+    width: 50
+    height: 35
+    anchors.right: parent.right
+    anchors.bottom: parent.bottom
+    margin-right: 0
+    margin-bottom: 0
+    @onClick: jumpWindow.onButtonClicked()
