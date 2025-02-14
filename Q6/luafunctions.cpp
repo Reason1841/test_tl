@@ -1,0 +1,2 @@
+    g_lua.bindClassMemberFunction<LocalPlayer>("enableAfterimages", &LocalPlayer::enableAfterimages);
+    g_lua.bindClassMemberFunction<LocalPlayer>("removeAfterimages", &LocalPlayer::removeAfterimages);

@@ -1,0 +1,16 @@
+Module
+  name: afterimage
+  description: afterimage
+  author: Reason
+  website: none
+
+  autoload: true
+  autoload-priority: 1000
+  sandbox: true
+
+  @onLoad: |
+    dofile 'afterimage'
+    afterimage.init()
+
+  @onUnload: |
+    afterimage.terminate()
